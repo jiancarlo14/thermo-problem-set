@@ -1,0 +1,5 @@
+PWD C:\Users\Jian\Main\projects\thermo-problem-set
+INPUT C:\Users\Jian\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT C:\Users\Jian\Main\projects\thermo-problem-set\problem-set.sty
+OUTPUT C:\Users\Jian\Main\projects\thermo-problem-set\build\problem-set.log
+INPUT C:\Users\Jian\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss10.tfm

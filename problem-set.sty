@@ -1,0 +1,65 @@
+% SYMBOLS, MATH
+\usepackage{amsmath}
+\usepackage[version=4]{mhchem}
+\usepackage{textgreek}
+\usepackage{mathtools}
+\usepackage{cancel}
+\usepackage{empheq}
+%
+\newcommand*\widefbox[1]{%
+  \fbox{%
+    \vspace{0.5em}%
+    \hspace{2em}%
+    #1%
+    \hspace{2em}%
+    \vspace{0.5em}%
+  }
+}
+%
+
+% FIGURES, TABLES, LISTS
+\usepackage{graphicx}
+\usepackage{pgf}
+\usepackage{booktabs}
+\usepackage{enumitem}
+
+% FONT
+\usepackage[utf8]{inputenc}
+\usepackage{sectsty}
+\usepackage{lmodern}
+\allsectionsfont{\sffamily}
+\renewcommand{\contentsname}{{\sffamily Table of Contents}}
+
+% TOC STYLE
+\usepackage{tocloft}
+% \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsecfont}{\normalfont}
+\renewcommand{\cftsecpagefont}{\normalfont}
+
+% BIBLIOGRAPHY
+%\usepackage{biblatex}
+%\bibliography{}
+\usepackage[hidelinks]{hyperref}
+
+% UNITS
+\usepackage{siunitx}
+\DeclareSIUnit\bar{bar}
+\DeclareSIUnit\feet{ft}
+\DeclareSIUnit\atmosphere{atm}
+
+% SOLUTION ENVIRONMENT
+\newenvironment{SOLUTION}%
+{\vspace{0.5em}\newline\noindent\textbf{Solution:}\par\setlength{\parindent}{1em}}%
+{\medskip}
+
+% PROBLEM COMMAND
+\newcommand{\PROBLEM}[1]{%
+  \subsection*{Problem #1}
+  \addcontentsline{toc}{subsection}{Problem #1}
+}
+
+% CHAPTER COMMAND
+\newcommand{\CHAPTER}[1]{%
+  \section*{Chapter #1}
+  \addcontentsline{toc}{section}{Chapter #1}
+}
