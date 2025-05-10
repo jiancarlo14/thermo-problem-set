@@ -1,3 +1,5 @@
+\documentclass{article}
+
 % SYMBOLS, MATH
 \usepackage{amsmath}
 \usepackage[version=4]{mhchem}
@@ -47,16 +49,44 @@
 \DeclareSIUnit\feet{ft}
 \DeclareSIUnit\atmosphere{atm}
 
+% MATH COMMAND
+% \newcommand{\MATH}[1]{%
+%   \begin{gather*}
+%     #1
+%   \end{gather*}
+% }
+
+% MBOX COMMAND
+% \newcommand{\mbox}[1]{%
+%   \begin{empheq}[box=\widefbox]{gather*}
+%     #1
+%   \end{empheq}
+% }
+
+% SOLUTION COMMAND
+% \newcommand{\SOLUTION}[1]{%
+%   \vspace{0.5em}%
+%   \newline%
+%   \noindent\textbf{Solution:}\par%
+%   \medskip%
+%   #1\par%
+% }
+
 % SOLUTION ENVIRONMENT
-\newenvironment{SOLUTION}%
-{\vspace{0.5em}\newline\noindent\textbf{Solution:}\par\setlength{\parindent}{1em}}%
+\newenvironment{solution}%
+{\noindent\textbf{Solution:}\par}%
 {\medskip}
 
 % PROBLEM COMMAND
-\newcommand{\PROBLEM}[1]{%
-  \subsection*{Problem #1}
-  \addcontentsline{toc}{subsection}{Problem #1}
-}
+% \newenvironment{PROBLEM}[1]
+%   {\subsection*{Problem #1}%
+%    \addcontents{toc}{subsection}{Problem #1}}
+%   {}
+
+% \newcommand{\PROBLEM}[1]{%
+%   \subsection*{Problem #1}
+%   \addcontentsline{toc}{subsection}{Problem #1}
+% }
 
 % CHAPTER COMMAND
 \newcommand{\CHAPTER}[1]{%
