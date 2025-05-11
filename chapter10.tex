@@ -117,9 +117,24 @@ pressure of $90~\unit{\kilo\pascal}$ for one of the following systems:
 \end{enumerate}
 \begin{solution}
   \begin{gather*}
-    &A_{1} = 13.8594 &B_{1} = 2773.78 &C_{1} = 220.07 \\
-    &A_{2} = 14.0045 &B_{2} = 3279.47 &C_{2} = 213.20
+    A_{1} = 13.8594 \hfill B_{1} = 2773.78 \hfill C_{1} = 220.07 \\
+    A_{2} = 14.0045 \hfill B_{2} = 3279.47 \hfill C_{2} = 213.20 \\
   \end{gather*}
+  \begin{gather*}
+    P_{i}^{\text{sat}} = A_{i} - \frac{B_{i}}{t + C} \\
+    P = x_{1}P_{1}^{\text{sat}} + x_{2}P_{2}^{\text{sat}} \\
+    y_{1} = \frac{x_{1}P_{1}^{\text{sat}}}{P}
+  \end{gather*}
+  \begin{figure}[h!]
+    \centering
+    \begin{minipage}[t]{0.45\textwidth}
+      \centering
+      \includegraphics[scale=0.5]{images/problem_10_2a.pdf}
+      \caption{$P-x-y$ diagram of the system described in Problem 10.2.}
+      \label{fig:p10_2}
+    \end{minipage}
+    \hfill
+  \end{figure}
 \end{solution}
 \subsection*{Problem 10.9}
 \addcontentsline{toc}{subsection}{Problem 10.9}
@@ -221,6 +236,5 @@ Assuming the validity of Eq.~\ref{eq:MRL}
       \end{empheq}
   \end{enumerate}
 \end{solution}
-
 
 \end{document}
